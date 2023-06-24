@@ -13,15 +13,12 @@ def search(nums: [int], target: int):
     # Your code goes here
     l = 0
     h = len(nums)-1
-    mid = (l + h)//2
-
     while l <= h:
+        mid = (l + h)//2
         if nums[mid] == target:
             return mid
         elif nums[mid] > target:
             h = mid - 1
         else:
-            l = mid + 1
-        mid = (l + h)//2
-        
+            l = mid + 1        
     return -1

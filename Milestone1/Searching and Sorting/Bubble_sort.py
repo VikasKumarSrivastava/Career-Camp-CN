@@ -10,3 +10,12 @@ def bubbleSort(arr: [int], size: int):
         for j in range(size-1):
             if arr[j] > arr[j+1]:
                 arr[j],arr[j+1] = arr[j+1],arr[j]
+
+# Better Approach
+def bubbleSort(arr: [int], size: int):
+    # Your code goes here.
+    for i in range(size-1):
+        for j in range(size-1-i):
+            if arr[j] > arr[j+1]:
+                arr[j],arr[j+1] = arr[j+1],arr[j]
+

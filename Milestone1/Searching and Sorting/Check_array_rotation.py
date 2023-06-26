@@ -18,3 +18,4 @@ def arrayRotateCheck(arr, n):
             min_ele = arr[i]
             ans = i
     return ans
+#return the index of the minimum element in the given input

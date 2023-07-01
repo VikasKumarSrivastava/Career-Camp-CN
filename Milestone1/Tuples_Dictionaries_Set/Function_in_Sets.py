@@ -1,3 +1,33 @@
+a={"apple","abc",23}
+
+type(a)
+
+'abc' in a
+
+21 in a
+
+for v in a:
+    print(v)
+
+len(a)
+
+a.add("temp")
+
+b={'abc','ghi'}
+
+a.update(b)
+
+a.remove('temp')
+
+a.remove('rrr')
+
+a.discard(23)
+
+a.discard('rrr')
+
+a.pop()
+
+
 a={1,2,3,4}
 b={3,4,5,6}
 

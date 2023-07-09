@@ -2,6 +2,11 @@
 # the array has only one element left (an array with one element is always sorted). 
 # Then the sorted subarrays are merged into one sorted array.
 # for more details visit: https://www.geeksforgeeks.org/merge-sort/
+# Time Complexity : O(nlog(n))
+#Auxillary space : O(n)
+#A stable algorithm, which means it maintains the relative order of equal elements in the input array.
+#Not in-place: Merge sort is not an in-place sorting algorithm, which means it requires additional memory to store the sorted data. 
+    #This can be a disadvantage in applications where memory usage is a concern.
 def merge(arr1,arr2,arr):
     i=0
     j=0

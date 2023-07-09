@@ -10,6 +10,7 @@
   # Best Case: \omega (N * log N)
   # Average Case: \Theta (N * logN)
   # Worst Case: O(N2)
+# Auxiliary Space: O(log(N))
 # It is not a stable sort, meaning that if two elements have the same key, their relative order will not be preserved 
 # in the sorted output in case of quick sort, 
 # because here we are swapping elements according to the pivot’s position (without considering their original positions).

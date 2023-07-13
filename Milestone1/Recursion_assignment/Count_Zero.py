@@ -22,21 +22,22 @@ from os import *
 
 ## Read input as specified in the question.
 ## Print output as specified in the question.
-
+# TC: O(logN)
+# SC: O(logN)
 
 def count_zero(n):
-    if n ==0:
+    if n<0:
+        n *=-1
+    if n <10:
+        if n == 0:
+            return 1
         return 0
-    rem = n%10
-    total = 0
-    if rem==0:
-        total +=1
-    total +=count_zero(n//10)
-    return total
+    smallAns = count_zero(n//10)
+    if n%10==0:
+        smallAns += 1
+    return smallAns
 
 
 n = int(input())
-if n==0:
-    print(1)
-else:
-    print(count_zero(n))
+print(count_zero(n))
+

@@ -13,14 +13,18 @@ from os import *
 ## Read input as specified in the question.
 ## Print output as specified in the question.
 
-
 def multi(m, n):
-    if n==1 or m==0:
-        return m
-    return m + multi(n-1,m)
+    if n==0 or m==0:
+        return 0
+    if n>0:
+        smallAns= multi(m,n-1)
+        return smallAns +m
+    else:
+        smallAns  = multi(m,n+1)
+        return smallAns - m
+
+from sys import setrecursionlimit
+setrecursionlimit(11000)
 m = int(input())
 n = int(input())
-if m < 0 or n< 0:
-        print()
-else:
-    print(multi(m,n))
+print(multi(m,n))

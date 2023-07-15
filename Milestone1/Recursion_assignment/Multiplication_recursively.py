@@ -18,13 +18,10 @@ def multi(m, n):
         return 0
     if n>0:
         smallAns= multi(m,n-1)
-        return smallAns +m
-    else:
-        smallAns  = multi(m,n+1)
-        return smallAns - m
+        return smallAns + m
 
 from sys import setrecursionlimit
 setrecursionlimit(11000)
 m = int(input())
-n = int(input())
+n  = int(input())
 print(multi(m,n))

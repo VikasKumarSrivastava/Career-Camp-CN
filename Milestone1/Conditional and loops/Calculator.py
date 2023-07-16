@@ -13,6 +13,7 @@ n = int(input())
 
 while n:
     if n == 1:
+        
         n1 = int(input())
         n2 = int(input())
         print(n1+n2)

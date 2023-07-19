@@ -20,4 +20,12 @@ class Vehicle():
         except ZeroDivisionError:
             age=2021-int(self.model)
             return 1000*(1)
-  
+
+myobj1 = Vehicle('Tesla','new',"Electric")
+myobj1.get_value()
+myobj2 = Vehicle('Tesla','2021',"Electric")
+myobj2.get_value()
+myobj3 = Vehicle('Tesla',2021,"Electric")
+myobj3.get_value()
+myobj4 = Vehicle('Tesla',2021,"Electric")
+myobj4.get_value()

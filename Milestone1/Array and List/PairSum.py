@@ -4,9 +4,9 @@ def pairSum(arr, n, x) :
     # if n ==0:
     #     return 0
     # count= 0
-    # for i in range(0,n-2):
+    # for i in range(0,n-1):
     #     for j in range(i+1,n):
-    #         if arr[i] + arr[j] == x:
+    #         if arr[i] + arr[j] == num:
     #             count= count + 1
     # return count
 

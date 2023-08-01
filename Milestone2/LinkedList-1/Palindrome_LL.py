@@ -56,14 +56,9 @@ def isPalindrome(head) :
         firstSublist = firstSublist.next
         secondSublist = secondSublist.next
 
-    firstSublist = head
-    secondSublist = reversedLL(secondHead)
-
-    while firstSublist.next is not None:
-        firstSublist = firstSublist.next
-    firstSublist.next = secondSublist
-
     return True
+
+
 #Taking Input Using Fast I/O
 def takeInput() :
     head = None

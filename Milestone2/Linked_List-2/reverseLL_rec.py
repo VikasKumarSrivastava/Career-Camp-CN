@@ -14,18 +14,29 @@ class Node :
         self.data = data
         self.next = None
 
-def solve(head):
+# def solve(head):
+#     if head is None or head.next is None:
+#         return head,head
+#     newHead ,newTail= solve(head.next)
+#     newTail.next = head
+#     head.next = None
+#     return newHead,head
+
+def solve2(head):
     if head is None or head.next is None:
-        return head,head
-    newHead ,newTail= solve(head.next)
-    newTail.next = head
+        return head
+    smallHead  = solve2(head.next)
+    tail = head.next
+    tail.next = head
     head.next = None
-    return newHead,head
+    return smallHead
 
 def reverseLinkedListRec(head) :
 	#Your code goes here
-    head1 , tail = solve(head)
-    return head1
+    # head1 , tail = solve(head)
+    # return head1
+    head2 = solve2(head)
+    return head2
 
 #Taking Input Using Fast I/O
 def takeInput() :
@@ -50,7 +61,6 @@ def takeInput() :
         i += 1
 
     return head
-
 def printLinkedList(head) :
 
     while head is not None :

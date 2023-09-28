@@ -8,6 +8,10 @@
 # Sample Output 1 :
 # 0 1 0 0 0 0 0 1 1 0 0 0 0 0 1 0 
 # 0 0 1 0 1 0 0 0 0 0 0 1 0 1 0 0 
+# Time complexity: O(N!): The first queen has N placements,
+# the second queen must not be in the same column as the first as well as at an oblique angle, 
+# so the second queen has N-1 possibilities, and so on, with a time complexity of O(N!).
+# Spatial Complexity: O(N): Need to use arrays to save information.
 
     
 def isSafe(row,col,board,n):

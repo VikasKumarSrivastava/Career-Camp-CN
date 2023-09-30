@@ -10,6 +10,10 @@
 # bca
 # cab
 # cba
+   # Time Complexity: O(N! * log(N!))
+   #  Space complexity: O(N * N!)
+    
+   #  Where N is the length of the given string.
 def genPermutation(str,l,r,ans):
     if l==r:
         ans.append(str)

@@ -15,7 +15,9 @@ class Graph:
                 self.__dfsHelper(i,visited)            
     def dfs(self):
         visited=[False for i in range(self.nVertices)]
-        self.__dfsHelper(0,visited)
+        for i in range(self.nVertices):
+            if visited[i] is False:
+                self.__dfsHelper(i,visited)
     def removeEdge(self):
         if self.containsEdge(v1,v2) is False:
             return

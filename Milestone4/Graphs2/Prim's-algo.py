@@ -17,6 +17,7 @@
 # 1 2 1
 # 0 3 5
 
+#TC: O(n^2)
 import sys
 import queue
 class Graph:

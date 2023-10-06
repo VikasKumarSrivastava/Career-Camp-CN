@@ -15,7 +15,7 @@ Sample Output 1 :
 1 2 1
 0 1 3
 0 3 5
-#TC = O(V)
+#TC = O(E*V + E logE)
 class Edge:
     def __init__(self,src,dest,wt):
         self.src=src

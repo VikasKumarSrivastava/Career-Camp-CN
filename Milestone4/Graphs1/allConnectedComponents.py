@@ -1,5 +1,6 @@
 # Given an undirected graph G(V,E), find and print all the connected components of the given graph G.
 # Note:
+
 # 1. V is the number of vertices present in graph G and vertices are numbered from 0 to V-1. 
 # 2. E is the number of edges present in graph G.
 # 3. You need to take input in main and create a function which should return all the connected components. And then print them in the main, not inside function.

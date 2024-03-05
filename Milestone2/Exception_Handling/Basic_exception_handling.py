@@ -1,3 +1,4 @@
+
 class Vehicle():
     def __init__(self,make,model,fuel):
         self.make=make
